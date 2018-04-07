@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryPatternInMVC.Infrastructure
 {
-    class ProductInitalizeDB : DropCreateDatabaseIfModelChanges<ProductContext>
+    public class ProductInitalizeDB : DropCreateDatabaseIfModelChanges<ProductContext>
     {
         protected override void Seed(ProductContext context)
         {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryPatternInMVC.Infrastructure
 {
-    class ProductContext: DbContext
+    public class ProductContext: DbContext
     {
         public ProductContext():base("name=ProductAppConnectionString")
         {

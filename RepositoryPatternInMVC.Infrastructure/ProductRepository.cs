@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryPatternInMVC.Infrastructure
 {
-    class ProductRepository : IProductRepository
+    public class ProductRepository : IProductRepository
     {
         ProductContext _context = new ProductContext();
 
@@ -32,7 +32,7 @@ namespace RepositoryPatternInMVC.Infrastructure
 
         public IEnumerable GetProducts()
         {
-            return _context.Products;
+            return _context.Products.ToList();
         }
 
         public void Remove(int Id)
